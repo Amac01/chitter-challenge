@@ -1,6 +1,32 @@
-<h1>Chitter</h1><br>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chitter</title>
+  </head>
+  <body>
+  <h1>Chitter</h1>
+  <br>
+    <p>'Hello all'</p>
+    <% @peeps.each do |peep|%>
+      <p><%=peep%></p>
+    <%end%>
 
-'Hello all'
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-- # <%@peeps.each do |peep| %>
+#   <%= render :partial => peep %>
+#   <%= render :partial => peep.comments.reverse %>
+# <% end %> -->
 
 <!-- <ul>
   <li> <a href="/">View peeps</a> </li>
